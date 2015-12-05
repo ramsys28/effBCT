@@ -1,12 +1,12 @@
-function [kden,N,K] = density_und(CIJ)
+function [kden,N,K] = density_und(a)
 %DENSITY        Density
 %
-%   kden = density_und(CIJ);
-%   [kden,N,K] = density_und(CIJ);
+%   kden = density_und(a);
+%   [kden,N,K] = density_und(a);
 %
 %   Density is the fraction of present connections to possible connections.
 %
-%   Input:      CIJ,    undirected (weighted/binary) connection matrix
+%   Input:      a,      I/O object handler
 %
 %   Output:     kden,   density
 %               N,      number of vertices
@@ -21,7 +21,8 @@ function [kden,N,K] = density_und(CIJ)
 
 % Modification history:
 % 2009-10: K fixed to sum over one half of CIJ [Tony Herdman, SFU]
+% 2015: CIJ is directly accessed without being loaded into memory
 
-N = size(CIJ,1);
-K = nnz(triu(CIJ));
+N = size(a.CIJ, 1);
+K = nnz(triu(a.CIJ));
 kden = K/((N^2-N)/2);
