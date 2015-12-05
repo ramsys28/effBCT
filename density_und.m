@@ -23,6 +23,6 @@ function [kden,N,K] = density_und(a)
 % 2009-10: K fixed to sum over one half of CIJ [Tony Herdman, SFU]
 % 2015: CIJ is directly accessed without being loaded into memory
 
-N = size(a.CIJ, 1);
+N = size(a.CIJ,1);
 K = nnz(triu(a.CIJ));
 kden = K/((N^2-N)/2);
