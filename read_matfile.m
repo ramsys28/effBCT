@@ -19,5 +19,5 @@ b = whos(a);
 if(min(b.size) == max(b.size))
     CIJ = b.name;
 else
-    error('Matrix should be square!');
+    error('Connection matrix should be square!');
 end
