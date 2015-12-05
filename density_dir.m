@@ -21,6 +21,6 @@ function [kden,N,K] = density_dir(a)
 % Modification history:
 % 2015: CIJ is directly accessed without being loaded into memory
 
-N = size(a.CIJ, 1);
+N = size(a.CIJ,1);
 K = nnz(a.CIJ);
 kden = K/(N^2-N);
