@@ -16,7 +16,7 @@ function [deg] = degrees_und(a)
 
 % Modification history:
 % 2015: CIJ is directly accessed without being loaded into memory, 
-% binary validation of CIJ is performed inside the sum (prevent loading).
+% binary validation of CIJ is performed inside the sum (direct access).
 
 % ensure CIJ is binary and compute degrees
 deg = sum(double(a.CIJ~=0));
