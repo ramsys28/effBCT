@@ -19,3 +19,4 @@ function [deg] = degrees_und(a)
 
 % ensure CIJ is binary and compute degrees
 deg = sum(double(a.CIJ~=0));
+
