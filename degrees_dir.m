@@ -21,7 +21,7 @@ function [id,od,deg] = degrees_dir(a)
 
 % Modification history:
 % 2015: CIJ is directly accessed without being loaded into memory, 
-% binary validation of CIJ is performed inside the sum (prevents loading).
+% binary validation of CIJ is performed inside the sum (direct access).
 
 % ensure CIJ is binary and compute degrees
 id = sum(double(a.CIJ~=0),1);    % indegree = column sum of CIJ
