@@ -25,4 +25,4 @@ function [id,od,deg] = degrees_dir(a)
 % ensure CIJ is binary and compute degrees
 id = sum(double(a.CIJ~=0),1);    % indegree = column sum of CIJ
 od = sum(double(a.CIJ~=0),2)';   % outdegree = row sum of CIJ
-deg = id+od;        % degree = indegree+outdegree
+deg = id+od;      % degree = indegree+outdegree
