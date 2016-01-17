@@ -1,4 +1,4 @@
-function C=clustering_coef_wd(a)
+function C = clustering_coef_wd(a)
 %CLUSTERING_COEF_WD     Clustering coefficient
 %
 %   C = clustering_coef_wd(W);
@@ -27,10 +27,10 @@ function C=clustering_coef_wd(a)
 % Modification history:
 % 2016: CIJ is directly accessed without being loaded into memory
 
-A=a.CIJ~=0;                     %adjacency matrix
-S=(a.CIJ).^(1/3)+((a.CIJ).').^(1/3);	%symmetrized weights matrix ^1/3
-K=sum(A+A.',2);            	%total degree (in + out)
-cyc3=diag(S^3)/2;           %number of 3-cycles (ie. directed triangles)
-K(cyc3==0)=inf;             %if no 3-cycles exist, make C=0 (via K=inf)
-CYC3=K.*(K-1)-2*diag(A^2);	%number of all possible 3-cycles
-C=cyc3./CYC3;               %clustering coefficient
+A = a.CIJ~=0;                     %adjacency matrix
+S = (a.CIJ).^(1/3)+((a.CIJ).').^(1/3);	%symmetrized weights matrix ^1/3
+K = sum(A+A.',2);            	%total degree (in + out)
+cyc3 = diag(S^3)/2;           %number of 3-cycles (ie. directed triangles)
+K(cyc3==0) = inf;             %if no 3-cycles exist, make C=0 (via K=inf)
+CYC3 = K.*(K-1)-2*diag(A^2);	%number of all possible 3-cycles
+C = cyc3./CYC3;               %clustering coefficient
