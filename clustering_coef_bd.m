@@ -1,4 +1,4 @@
-function C=clustering_coef_bd(a)
+function C = clustering_coef_bd(a)
 %CLUSTERING_COEF_BD     Clustering coefficient
 %
 %   C = clustering_coef_bd(A);
@@ -29,9 +29,9 @@ function C=clustering_coef_bd(a)
 % Modification history:
 % 2016: CIJ is directly accessed without being loaded into memory
 
-S=a.CIJ+(a.CIJ).';          %symmetrized input graph
-K=sum(S,2);                 %total degree (in + out)
-cyc3=diag(S^3)/2;           %number of 3-cycles (ie. directed triangles)
-K(cyc3==0)=inf;             %if no 3-cycles exist, make C=0 (via K=inf)
-CYC3=K.*(K-1)-2*diag((a.CIJ)^2);	%number of all possible 3-cycles
-C=cyc3./CYC3;               %clustering coefficient
+S = a.CIJ+(a.CIJ).';          %symmetrized input graph
+K = sum(S,2);                 %total degree (in + out)
+cyc3 = diag(S^3)/2;           %number of 3-cycles (ie. directed triangles)
+K(cyc3==0) = inf;             %if no 3-cycles exist, make C=0 (via K=inf)
+CYC3 = K.*(K-1)-2*diag((a.CIJ)^2);	%number of all possible 3-cycles
+C = cyc3./CYC3;               %clustering coefficient
