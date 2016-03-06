@@ -14,6 +14,7 @@ function C = clustering_coef_wd(a)
 %
 %   Reference: Fagiolo (2007) Phys Rev E 76:026107.
 %
+%
 %   Mika Rubinov, UNSW, 2007-2010
 
 
