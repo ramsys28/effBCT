@@ -10,6 +10,8 @@ function [C_tri] = transitivity_bu(a)
 %
 %   Output:     T,      transitivity scalar
 %
+%   Notes: CIJ is a binary and undirected connection matrix.
+%
 %   Reference: e.g. Humphries et al. (2008) Plos ONE 3: e0002051
 %
 %
