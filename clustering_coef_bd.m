@@ -10,9 +10,9 @@ function C = clustering_coef_bd(a)
 %
 %   Output:     C,      clustering coefficient vector
 %
-%   Reference: Fagiolo (2007) Phys Rev E 76:026107.
-%
 %   Notes:  CIJ is a binary and directed connection matrix.
+%
+%   Reference: Fagiolo (2007) Phys Rev E 76:026107.
 %
 %   Mika Rubinov, UNSW, 2007-2010
 
