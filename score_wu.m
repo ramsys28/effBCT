@@ -1,7 +1,7 @@
-function [a, sn] = score_wu(a, s)
+function [a,sn] = score_wu(a, s)
 %SCORE_WU       S-score
 %
-%   [a, sn] = score_wu(a,s);
+%   [a,sn] = score_wu(a,s);
 %
 %   The s-core is the largest subnetwork comprising nodes of strength at
 %   least s. This function computes the s-core for a given weighted
