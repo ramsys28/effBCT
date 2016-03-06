@@ -9,7 +9,8 @@ function [deg] = degrees_und(a)
 %
 %   Output:     deg,    node degree
 %
-%   Note: Weight information is discarded.
+%   Notes:  1. CIJ is a weighted/binary and undirected connection matrix.
+%           2. Weight information is discarded.
 %
 %
 %   Olaf Sporns, Indiana University, 2002/2006/2008
