@@ -1,7 +1,7 @@
 function [a, sn] = score_wu(a, s)
 %SCORE_WU       S-score
 %
-%   [a,sn] = score_wu(a,s);
+%   [a, sn] = score_wu(a,s);
 %
 %   The s-core is the largest subnetwork comprising nodes of strength at
 %   least s. This function computes the s-core for a given weighted
@@ -24,7 +24,7 @@ function [a, sn] = score_wu(a, s)
 
 % Modification history:
 % 2016: 1. CIJ is directly accessed without being loaded into memory
-%       2. CIJscore removed, object handler is returned instead
+%       2. CIJscore is removed, object handler is returned instead
 
 while 1
 
