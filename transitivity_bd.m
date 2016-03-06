@@ -10,6 +10,8 @@ function T = transitivity_bd(a)
 %
 %   Output:     T,      transitivity scalar
 %
+%   Notes: CIJ is a binary and directed connection matrix.
+%
 %   Reference:  Rubinov M, Sporns O (2010) NeuroImage 52:1059-69
 %               based on Fagiolo (2007) Phys Rev E 76:026107.
 %
@@ -33,8 +35,6 @@ function T = transitivity_bd(a)
 %                       = 2 * (K(K-1)/2 - diag(A^2))
 %                       = K(K-1) - 2(diag(A^2))
 
-
-% S = a.CIJ+(a.CIJ).';                  %symmetrized input graph
 K = sum((a.CIJ+(a.CIJ).'),2);         %total degree (in + out)
 cyc3 = diag((a.CIJ+(a.CIJ).')^3)/2;   %number of 3-cycles (ie. directed triangles)
 CYC3 = K.*(K-1)-2*diag((a.CIJ)^2);    %number of all possible 3-cycles
