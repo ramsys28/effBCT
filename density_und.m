@@ -12,8 +12,9 @@ function [kden,N,K] = density_und(a)
 %               N,      number of vertices
 %               K,      number of edges
 %
-%   Notes:  Assumes CIJ is undirected and has no self-connections.
-%           Weight information is discarded.
+%   Notes:  1. CIJ is a weighted/binary and undirected connection matrix.
+%           2. Assumes CIJ is undirected and has no self-connections.
+%           3. Weight information is discarded.
 %
 %
 %   Olaf Sporns, Indiana University, 2002/2007/2008
