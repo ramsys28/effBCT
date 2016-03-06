@@ -10,6 +10,8 @@ function T = transitivity_wu(a)
 %
 %   Output:     T,      transitivity scalar
 %
+%   Notes: CIJ is a weighted and undirected connection matrix.
+%
 %   Reference: Rubinov M, Sporns O (2010) NeuroImage 52:1059-69
 %              based on Onnela et al. (2005) Phys Rev E 71:065103
 %
