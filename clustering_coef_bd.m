@@ -12,6 +12,7 @@ function C = clustering_coef_bd(a)
 %
 %   Reference: Fagiolo (2007) Phys Rev E 76:026107.
 %
+%   Notes:  CIJ is a binary and directed connection matrix.
 %
 %   Mika Rubinov, UNSW, 2007-2010
 
