@@ -17,6 +17,7 @@ function Cs = subgraph_centrality(a)
 %   Reference: Estrada and Rodriguez-Velasquez (2005) Phys Rev E 71, 056103
 %              Estrada and Higham (2010) SIAM Rev 52, 696.
 %
+%
 %   Xi-Nian Zuo, Chinese Academy of Sciences, 2010
 %   Rick Betzel, Indiana University, 2012
 
