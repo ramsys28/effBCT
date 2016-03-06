@@ -13,8 +13,9 @@ function [id,od,deg] = degrees_dir(a)
 %               od,     node outdegree
 %               deg,    node degree (indegree + outdegree)
 %
-%   Notes:  Inputs are assumed to be on the columns of the CIJ matrix.
-%           Weight information is discarded.
+%   Notes:  1. CIJ is a weighted/binary and directed connection matrix.
+%           2. Inputs are assumed to be on the columns of the CIJ matrix.
+%           3. Weight information is discarded. 
 %
 %
 %   Olaf Sporns, Indiana University, 2002/2006/2008
